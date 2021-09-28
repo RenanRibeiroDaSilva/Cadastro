@@ -1,0 +1,45 @@
+// Teste da API REST - Funcionario
+
+@baseURL = http://localhost:4001
+@id = 6153193f85b1c87ae7a99fdc
+
+###
+// GET - Listar todas as categorias
+GEt {{baseURL}}/funcionarios
+Content-Type: application/json
+
+###
+// GET - Listar todas as fucionario pelo id
+GEt {{baseURL}}/funcionarios/{{id}}
+Content-Type: application/json
+
+###
+// DELETE - Apaga uma categoria pelo id
+DELETE {{baseURL}}/funcionarios/{{id}}
+Content-Type: application/json
+
+###
+// POST - Incluir uma nova categora
+POST {{baseURL}}/funcionarios
+Content-Type: application/json
+
+{
+    "nome": "Marlene Ribeiro da Silva",
+    "idade": "58",
+    "genero": "Feminino",
+    "profissao": "Motorista D",
+    "status": "inativo"
+}
+
+###
+// PUT - Altera uma nova categora
+PUT {{baseURL}}/funcionarios
+Content-Type: application/json
+
+{ "_id": "6153193f85b1c87ae7a99fdc",
+    "nome": "Marlene Ribeiro da Silva",
+    "idade": "59",
+    "genero": "Feminino",
+    "profissao": "Motorista D",
+    "status": "inativo"
+}
