@@ -1,7 +1,7 @@
 // Teste da API REST - Funcionario
 
-@baseURL = http://localhost:4001
-@id = 6153193f85b1c87ae7a99fdc
+@baseURL = https://cadastro-funcionarios-gti.herokuapp.com
+@id = 6153191685b1c87ae7a99fda
 
 ###
 // GET - Listar todas as categorias
