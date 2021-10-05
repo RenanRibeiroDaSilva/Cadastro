@@ -1,7 +1,7 @@
 // Teste da API REST - Funcionario
 
 @baseURL = https://cadastro-funcionarios-gti.herokuapp.com
-@id = 6153191685b1c87ae7a99fda
+@id = 615ccd5c79703f837fead1a2
 
 ###
 // GET - Listar todas as categorias
@@ -27,7 +27,7 @@ Content-Type: application/json
     "nome": "Marlene Ribeiro da Silva",
     "idade": "58",
     "genero": "Feminino",
-    "profissao": "Motorista D",
+    "profissao": "Professora",
     "status": "inativo"
 }
 
@@ -36,8 +36,8 @@ Content-Type: application/json
 PUT {{baseURL}}/funcionarios
 Content-Type: application/json
 
-{ "_id": "6153193f85b1c87ae7a99fdc",
-    "nome": "Marlene Ribeiro da Silva",
+{ "_id": "615ccd5c79703f837fead1a2",
+    "nome": "Raquel Ribeiro da Silva",
     "idade": "59",
     "genero": "Feminino",
     "profissao": "Motorista D",
