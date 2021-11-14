@@ -8,6 +8,8 @@ InicializaMongoServer() // Inicializamos o MongoDB
 
 const app = express()
 
+app.use(cors())
+
 const PORT = process.env.PORT
 app.use(express.json()) // Definimos que o backend fará o parse do JSON
 
