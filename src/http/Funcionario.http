@@ -1,10 +1,10 @@
 // Teste da API REST - Funcionario
 
 @baseURL = https://cadastro-funcionarios-gti.herokuapp.com
-@id = 615ccd5c79703f837fead1a2
+@id = 61539766dffe7fe747fd8ee0
 
 ###
-// GET - Listar todas as categorias
+// GET - Listar todas os cadastros
 GEt {{baseURL}}/funcionarios
 Content-Type: application/json
 
@@ -14,25 +14,25 @@ GEt {{baseURL}}/funcionarios/{{id}}
 Content-Type: application/json
 
 ###
-// DELETE - Apaga uma categoria pelo id
+// DELETE - Apaga um cadastro pelo id
 DELETE {{baseURL}}/funcionarios/{{id}}
 Content-Type: application/json
 
 ###
-// POST - Incluir uma nova categora
+// POST - Incluir um novo cadastro
 POST {{baseURL}}/funcionarios
 Content-Type: application/json
 
 {
-    "nome": "Marlene Ribeiro da Silva",
-    "idade": "58",
+    "nome": "Alice Girassol",
+    "idade": "19",
     "genero": "Feminino",
     "profissao": "Professora",
     "status": "inativo"
 }
 
 ###
-// PUT - Altera uma nova categora
+// PUT - Altera um novo cadastro
 PUT {{baseURL}}/funcionarios
 Content-Type: application/json
 

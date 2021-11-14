@@ -1,4 +1,5 @@
 const express = require('express')
+const cors = require('cors')
 require('dotenv').config() // Carregar as variáveis de ambiente
 const InicializaMongoServer = require('./config/db')
 const rotasFuncionario = require('./routes/Funcionario')
