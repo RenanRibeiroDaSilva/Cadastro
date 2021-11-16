@@ -1,21 +1,19 @@
 const express = require('express')
 require('dotenv').config() // Carregar as variáveis de ambiente
+const cors = require('cors')
 const InicializaMongoServer = require('./config/db')
 const rotasFuncionario = require('./routes/Funcionario')
 
 InicializaMongoServer() // Inicializamos o MongoDB
 
-const cors = require('cors')
+
 const app = express()
+app.use(cors())
+
 
 const PORT = process.env.PORT
 app.use(express.json()) // Definimos que o backend fará o parse do JSON
 
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "*");
-    app.use(cors());
-    next();
-})
 
 // Definindo a primeira rota
 app.get('/', (req, res) => {
